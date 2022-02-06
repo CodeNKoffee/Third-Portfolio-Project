@@ -228,6 +228,13 @@ nav {
 SLIDER SECTION
 
 */
+#slider-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .slider__section--wrapper {
   margin: 32px auto;
   width: 100%;
@@ -245,12 +252,13 @@ SLIDER SECTION
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
 .slider__option {
   position: relative;
-  width: calc(100% / 3);
-  margin: 0 16px;
+  width: 20%;
+  margin: 0;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -265,18 +273,19 @@ SLIDER SECTION
 .slider__option--title {
   position: absolute;
   top: 10%;
-  left: 0;
+  left: 10%;
   font-size: 24px;
   font-weight: 600;
   color: #000;
   text-shadow: 2px 2px #fff;
+  width: 20ch;
   padding: 16px;
 }
 
 .slider__option--btn {
   position: absolute;
   bottom: 10%;
-  left: 5%;
+  left: 15%;
   border: none;
   border-radius: 50px;
   padding: 4px 8px;
@@ -287,7 +296,8 @@ SLIDER SECTION
   color: #000;
 }
 
-.slider__arrow {
+.slider__arrow--prev,
+.slider__arrow--next {
   font-weight: 700;
   border-radius: 50px;
   background-color: #eeeeee;
@@ -300,10 +310,35 @@ SLIDER SECTION
 }
 
 
+/* Swiper JS */
+.swiper {
+  width: 100%;
+}
+
+.button button:hover {
+  background-color: #ffc043;
+}
 
 
+.swiper-slide {
+  margin: 0;
+}
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  margin: 0 16px;
+}
 
+.swiper-pagination {
+  margin-top: 48px;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 24px; 
+  height: 8px;
+  width: 24px;
+  background-color: #ffc043;
+}
 
 
 

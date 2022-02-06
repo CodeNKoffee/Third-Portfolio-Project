@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-  <script src="script.js"></script>
+  <script defer src="script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
   <title>Uber Cuisine</title>
@@ -124,24 +126,66 @@
 
   <section id="slider-section">
     <div class="container">
-      <div class="slider__section--wrapper">
-        <span class="slider__arrow">←</span>
-        <ul class="slider__options">
-          <li class="slider__option">
+      <div class="slider__section--wrapper swiper mySwiper">
+        <!-- <span class="slider__arrow--prev">←</span> -->
+        <ul class="slider__options swiper-wrapper">
+          <li class="slider__option swiper-slide">
             <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
             <div class="slider__option--title">Get a free coke when ordering a large Super Supreme pizza</div>
             <button class="slider__option--btn">
               <a href="" class="slider__option--anchor">Order Now →</a>
             </button>
           </li>
-          <li class="slider__option">
+          <li class="slider__option swiper-slide">
             <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
             <div class="slider__option--title">Save $5 when ordering 12 doughnuts or more</div>
             <button class="slider__option--btn">
               <a href="" class="slider__option--anchor">Save Now →</a>
             </button>
           </li>
-          <li class="slider__option">
+          <li class="slider__option swiper-slide">
+            <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
+            <div class="slider__option--title">Become an Uber Taster with our Expert Taster program</div>
+            <button class="slider__option--btn">
+              <a href="" class="slider__option--anchor">Apply Now →</a>
+            </button>
+          </li>
+          <li class="slider__option swiper-slide">
+            <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
+            <div class="slider__option--title">Get a free coke when ordering a large Super Supreme pizza</div>
+            <button class="slider__option--btn">
+              <a href="" class="slider__option--anchor">Order Now →</a>
+            </button>
+          </li>
+          <li class="slider__option swiper-slide">
+            <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
+            <div class="slider__option--title">Save $5 when ordering 12 doughnuts or more</div>
+            <button class="slider__option--btn">
+              <a href="" class="slider__option--anchor">Save Now →</a>
+            </button>
+          </li>
+          <li class="slider__option swiper-slide">
+            <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
+            <div class="slider__option--title">Become an Uber Taster with our Expert Taster program</div>
+            <button class="slider__option--btn">
+              <a href="" class="slider__option--anchor">Apply Now →</a>
+            </button>
+          </li>
+          <li class="slider__option swiper-slide">
+            <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
+            <div class="slider__option--title">Get a free coke when ordering a large Super Supreme pizza</div>
+            <button class="slider__option--btn">
+              <a href="" class="slider__option--anchor">Order Now →</a>
+            </button>
+          </li>
+          <li class="slider__option swiper-slide">
+            <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
+            <div class="slider__option--title">Save $5 when ordering 12 doughnuts or more</div>
+            <button class="slider__option--btn">
+              <a href="" class="slider__option--anchor">Save Now →</a>
+            </button>
+          </li>
+          <li class="slider__option swiper-slide">
             <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
             <div class="slider__option--title">Become an Uber Taster with our Expert Taster program</div>
             <button class="slider__option--btn">
@@ -149,8 +193,29 @@
             </button>
           </li>
         </ul>
-        <span class="slider__arrow">→</span>
+        <!-- <span class="slider__arrow--next">→</span> -->
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          },
+        });
+      </script>
     </div>
   </section>
 </body>
