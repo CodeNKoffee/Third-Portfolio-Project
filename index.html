@@ -24,36 +24,46 @@
         </button>
         <div class="account__container">
           <figure class="account__img--wrapper">
-            <img class="account__img" src="" alt="">
+            <i class="far fa-user-circle account__img"></i>
+            <img src="./Assets/man-avatar.png" alt="Avatar" class="account__img--logged" title="Cartoon icons created by GeekClick - Flaticon">
           </figure>
           <div class="account__preview">
-            <span class="account__name"></span>
+            <span class="account__name">User#097651727</span>
+            <span class="account__name--logged">Greg Heffley</span>
             <span>
-              <a class="account__viewer" href="">View account</a>
+              <a class="account__viewer" href="">Sign in</a>
+              <a class="account__viewer--logged" href="">Sign out</a>
             </span>
           </div>
         </div>
         <ul class="menu__links">
           <li class="menu__list">
-            <a href="#home-section" class="menu__link" onclick="closeMenu()">Orders</a>
+            <i class="menu__link--icon fas fa-ticket-alt"></i>
+            <a href="#home-section" class="menu__link no-cursor" onclick="closeMenu()">Orders</a>
           </li>
           <li class="menu__list">
-            <a href="#about-section" class="menu__link" onclick="closeMenu()">Favourites</a>
+            <i class="menu__link--icon fas fa-heart"></i>
+            <a href="#about-section" class="menu__link no-cursor" onclick="closeMenu()">Favourites</a>
           </li>
           <li class="menu__list">
-            <a href="#projects-section" class="menu__link" onclick="closeMenu()">Wallet</a>
+            <i class="menu__link--icon fas fa-wallet"></i>
+            <a href="#projects-section" class="menu__link no-cursor" onclick="closeMenu()">Wallet</a>
           </li>
           <li class="menu__list">
-            <a href="#contact-section" class="menu__link" onclick="closeMenu()">Help</a>
+            <i class="menu__link--icon far fa-life-ring"></i>
+            <a href="#contact-section" class="menu__link no-cursor" onclick="closeMenu()">Help</a>
           </li>
           <li class="menu__list">
-            <a href="#contact-section" class="menu__link" onclick="closeMenu()">Promotions</a>
+            <i class="menu__link--icon fas fa-tags"></i>
+            <a href="#contact-section" class="menu__link no-cursor" onclick="closeMenu()">Promotions</a>
           </li>
           <li class="menu__list">
-            <a href="#contact-section" class="menu__link" onclick="closeMenu()">Uber One</a>
+            <i class="menu__link--icon fab fa-uber"></i>
+            <a href="#contact-section" class="menu__link no-cursor" onclick="closeMenu()">Uber One</a>
           </li>
           <li class="menu__list">
-            <a href="#contact-section" class="menu__link" onclick="closeMenu()">Invite friends</a>
+            <i class="menu__link--icon fas fa-gift"></i>
+            <a href="#contact-section" class="menu__link no-cursor" onclick="closeMenu()">Invite friends</a>
           </li>
         </ul>
         <button class="menu__btn--sign">Sign in</button>
@@ -128,21 +138,21 @@
         <span class="slider__arrow">←</span>
         <ul class="slider__options">
           <li class="slider__option">
-            <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
+            <img class="slider__option--img" src="./Assets/coca-cola-2.png" alt="Coca Cola" title="Photo by Ayesha C on Unsplash">
             <div class="slider__option--title">Get a free coke when ordering a large Super Supreme pizza</div>
             <button class="slider__option--btn">
               <a href="" class="slider__option--anchor">Order Now →</a>
             </button>
           </li>
           <li class="slider__option">
-            <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
+            <img class="slider__option--img" src="./Assets/doughnuts.png" alt="Doughnuts" title="Photo by Anastasiia Chepinska on Unsplash">
             <div class="slider__option--title">Save $5 when ordering 12 doughnuts or more</div>
             <button class="slider__option--btn">
               <a href="" class="slider__option--anchor">Save Now →</a>
             </button>
           </li>
           <li class="slider__option">
-            <img class="slider__option--img" src="./Assets/dummy__pic.jpg" alt="">
+            <img class="slider__option--img" src="./Assets/tester.png" alt="Uber Expert Taster" title="Photo by The BlackRabbit on Unsplash">
             <div class="slider__option--title">Become an Uber Taster with our Expert Taster program</div>
             <button class="slider__option--btn">
               <a href="" class="slider__option--anchor">Apply Now →</a>
@@ -153,5 +163,496 @@
       </div>
     </div>
   </section>
+
+  <section id="listings-section">
+    <div class="listings">
+      <div class="container">
+        <div class="listings__header--section">
+          <div class="header__title">When you're hungry now</div>
+          <span class="header__subtitle">The fastest food to your door</span>
+          <div class="header__view--options no-cursor">View all</div>
+        </div>
+        <div class="listings__grid">
+          <div class="listings__col">
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1562967914-01efa7e87832?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2252&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>Crispy Bites</h3>
+                  <div class="info">
+                    <span>$4.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.6</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >American | Middle Eastern | Halal | Plates | Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>The Bon Juvi Burger</h3>
+                  <div class="info">
+                    <span>$7.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Halal | Burger | Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1532636875304-0c89119d9b4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>Egyptian Doner Kebab</h3>
+                  <div class="info">
+                    <span>$11.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.5</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >Egyptian | Middle Eastern | Halal | Plates | Meals</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="listings__col">
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>German Doner Kebab 222</h3>
+                  <div class="info">
+                    <span>$4.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Halal | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>German Doner Kebab</h3>
+                  <div class="info">
+                    <span>$4.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Halal | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>German Doner Kebab</h3>
+                  <div class="info">
+                    <span>$4.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Halal | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Listing -->
+    <div class="listings">
+      <div class="container">
+        <div class="listings__header--section">
+          <div class="header__title">When you're craving now</div>
+          <span class="header__subtitle">The yummiest food to your tummy</span>
+          <div class="header__view--options no-cursor">View all</div>
+        </div>
+        <div class="listings__grid">
+          <div class="listings__col">
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="./Assets/koushari.jpg"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>Classic Koushari</h3>
+                  <div class="info">
+                    <span>$14.99 delivery fee | 25-35 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.9</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >Egyptian | Middle Eastern | Halal | Plates | Meals</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="./Assets/pizza.jpg"
+                  alt="Listing pic"
+                  title="Photo by Ivan Torres on Unsplash"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>Cheesievany Pizza</h3>
+                  <div class="info">
+                    <span>$24.99 delivery fee | 30-45 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.1</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >Italian | Middle Eastern | Halal | Pizza | Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="./Assets/lobster.jpg"
+                  alt="Listing pic"
+                  title="Photo by Ratapan Anantawat on Unsplash"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>Luciana Lobster</h3>
+                  <div class="info">
+                    <span>$64.99 delivery fee | 60-75 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.8</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >American | Middle Eastern | Halal | Seafood | Meals</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="listings__col">
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>German Doner Kebab 222</h3>
+                  <div class="info">
+                    <span>$4.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Halal | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>German Doner Kebab</h3>
+                  <div class="info">
+                    <span>$4.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Halal | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="./Assets/pizza.png"
+                  alt="Listing pic"
+                  title="Photo by Ivan Torres on Unsplash"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>Cheesievany Pizza</h3>
+                  <div class="info">
+                    <span>$14.99 delivery fee | 30-45 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.1</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >Italian | Middle Eastern | Halal | Pizza | Fast Food</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Listing -->
+    <div class="listings">
+      <div class="container">
+        <div class="listings__header--section">
+          <div class="header__title">When you're thirsty now</div>
+          <span class="header__subtitle">The freshest drinks to your door</span>
+          <div class="header__view--options no-cursor">View all</div>
+        </div>
+        <div class="listings__grid">
+          <div class="listings__col">
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="./Assets/juice-jar.jpg"
+                  alt="Listing pic"
+                  title="Photo by Yulia Khlebnikova on Unsplash"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>Berry Slushy</h3>
+                  <div class="info">
+                    <span>$3.99 delivery fee | 15-20 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.4</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >Canadian | Middle Eastern | Halal | Drinks | Juice</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="./Assets/soda.jpg"
+                  alt="Listing pic"
+                  title="Photo by Qasim Malick on Unsplash"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>Classic Coke</h3>
+                  <div class="info">
+                    <span>$1.99 delivery fee | 10-15 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.7</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >American | Middle Eastern | Halal | Drinks| Fizzy</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="./Assets/water.jpg"
+                  alt="Listing pic"
+                  title="Photo by Steve Johnson on Unsplash"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>Mineral Water</h3>
+                  <div class="info">
+                    <span>$0.99 delivery fee | 10-15 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.9</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >Egyptian | Middle Eastern | Halal | Drinks | Water</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="listings__col">
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>German Doner Kebab 222</h3>
+                  <div class="info">
+                    <span>$4.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Halal | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>German Doner Kebab</h3>
+                  <div class="info">
+                    <span>$4.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Halal | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+            <div class="listings__grid--element">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  alt="Listing pic"
+                />
+              </div>
+              <div class="text">
+                <div class="text__title">
+                  <h3>German Doner Kebab</h3>
+                  <div class="info">
+                    <span>$4.99 delivery fee | 20-30 MINS | $</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <span class="circle">4.2</span>
+                </div>
+              </div>
+              <div class="text__lower">
+                <span class="smallText"
+                  >German | Middle Eastern | Halal | Burger| Fast Food</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
