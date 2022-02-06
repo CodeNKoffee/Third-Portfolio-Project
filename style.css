@@ -1,0 +1,323 @@
+@font-face {
+  font-family: 'Uber Move';
+  src: url(./Fonts/UberMoveMedium.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Uber Move', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.separators {
+  width: 90%;
+}
+
+.orange {
+  color: #ffc043;
+}
+
+
+/*
+
+NAVIGATION BAR
+
+*/
+/* Primary Navigation & Utilities */
+nav {
+  padding: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn__menu {
+  background-color: transparent;
+  font-size: 32px;
+  border: none;
+  color: #000;
+  display: block;
+  transition: all 300ms ease;
+  display: flex;
+}
+
+.menu__backdrop {
+  position: absolute;
+  background-color: #333;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transition: all 300ms ease;
+  opacity: 0;
+  transform: translate(100%);
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list {
+  padding: 32px 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.menu__link:hover {
+  color: #ffc043;
+}
+
+.btn__menu--close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 8px;
+  color: white;
+  transition: all 300ms ease;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 16px;
+}
+
+.address__search--wrapper {
+  border-radius: 50px;
+  background-color: #eeeeee;
+  padding: 4px 16px;
+  min-width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.item__search--wrapper {
+  border-radius: 0;
+  background-color: #eeeeee;
+  padding: 4px 16px;
+  min-width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.address__search, .item__search {
+  background-color: #eeeeee;
+  color: #000;
+  height: 40px;
+  outline: none;
+  margin-left: 16px;
+}
+
+.item__cart--btn {
+  border-radius: 50px;
+  padding: 4px 16px;
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+}
+
+.fa-shopping-cart,
+.item__cart--name,
+.item__cart--count {
+  color: #fff;
+}
+
+/* Filter Navigation Bar */
+.category__list {
+  margin: 32px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.category__item {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category__img {
+  width: 60px;
+}
+
+.category__name {
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+
+/*
+
+SLIDER SECTION
+
+*/
+.slider__section--wrapper {
+  margin: 32px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__arrow--wrapper {
+  width: 5%;
+}
+
+.slider__options {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__option {
+  position: relative;
+  width: calc(100% / 3);
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.slider__option--img {
+  width: 300px;
+  border-radius: 16px;
+  filter: saturate(-5);
+}
+
+.slider__option--title {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-shadow: 2px 2px #fff;
+  padding: 16px;
+}
+
+.slider__option--btn {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  border: none;
+  border-radius: 50px;
+  padding: 4px 8px;
+}
+
+.slider__option--anchor {
+  font-weight: 300;
+  color: #000;
+}
+
+.slider__arrow--wrapper {
+  border-radius: 50px;
+  background-color: #000;
+  width: 5%;
+  margin: 0 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__arrow {
+  font-size: 32px;
+  color: #eeeeee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
