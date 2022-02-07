@@ -86,7 +86,9 @@ nav {
   justify-content: space-between;
 }
 
-.account__container {
+
+/* Account Logged In-Out Status */
+.account__container, .account__container--logged, #sign-in__status, #sign-out__status {
   margin-left: 8px;
   padding: 4px;
   display: flex;
@@ -94,7 +96,7 @@ nav {
   align-items: center;
 }
 
-.account__img--wrapper {
+.account__img--wrapper, .account__img--wrapper-logged {
   width: 60px;
   height: 60px;
   display: flex;
@@ -102,46 +104,31 @@ nav {
   align-items: center;
 }
 
-.account__img {
+.account__img, .account__img--logged {
   font-size: 56px;
   margin-bottom: 8px;
+  width: 60px;
 }
 
-.account__img--logged {
-  display: none;
-}
-
-.account__preview {
-  margin-left: 16px;
+.account__preview, .account__preview--logged {
+  margin-left: 8px;
   padding: 8px 0;
   display: flex;
   flex-direction: column;
 }
 
-.account__name {
+.account__name, .account__name--logged {
   font-size: 16px;
   font-weight: 700;
 }
 
-.account__name--logged {
-  display: none;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.account__viewer {
+.account__viewer, .account__viewer--logged {
   font-size: 16px;
   font-weight: 400;
   color: #ffc043;
 }
 
-.account__viewer--logged {
-  display: none;
-  font-size: 16px;
-  font-weight: 400;
-  color: #ffc043;
-}
-
+/* Hamburger Menu */
 .btn__menu {
   background-color: transparent;
   font-size: 32px;
@@ -230,6 +217,8 @@ nav {
   transition: all 300ms ease;
 }
 
+
+/* Other Nav Elements */
 .logo {
   font-size: 32px;
   font-weight: 800;
