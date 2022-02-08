@@ -75,7 +75,7 @@ const recipeCloseBtn = document.getElementById("recipe-close-btn");
 searchBtn.addEventListener("click", getMealList);
 mealList.addEventListener("click", getMealRecipe);
 recipeCloseBtn.addEventListener("click", () => {
-  mealDetailsContent.parentElement.classList.remove("showRecipe");
+  mealDetailsContent.parentElement.classList.remove("show__recipe");
 });
 
 
@@ -98,7 +98,7 @@ function getMealList(){
             </div>
             <div class = "meal-name">
               <h3>${meal.strMeal}</h3>
-              <a href = "#" class = "recipe-btn">Add to Cart</a>
+              <a href = "#" class = "recipe-btn">Show Recipe</a>
             </div>
           </div>
         `;
@@ -134,14 +134,14 @@ function mealRecipeModal(meal){
     <h2 class = "recipe-title">${meal.strMeal}</h2>
     <p class = "recipe-category">${meal.strCategory}</p>
     <div class = "recipe-instruct">
-        <h3>Instructions:</h3>
-        <p>${meal.strInstructions}</p>
+      <h3>Instructions:</h3>
+      <p>${meal.strInstructions}</p>
     </div>
     <div class = "recipe-meal-img">
-        <img src = "${meal.strMealThumb}" alt = "">
+      <img src = "${meal.strMealThumb}" alt = "">
     </div>
     <div class = "recipe-link">
-        <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
+      <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
     </div>
   `;
   mealDetailsContent.innerHTML = html;
