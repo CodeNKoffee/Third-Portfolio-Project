@@ -3,6 +3,13 @@
   src: url(./Fonts/UberMoveMedium.otf);
 }
 
+:root{
+  --uber-white: #fff;
+  --uber-yellow: #ffc043;
+  --uber-grey: #eeeeee;
+  --uber-black: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,12 +71,14 @@ input, button {
 }
 
 .orange {
-  color: #ffc043;
+  color: var(--uber-yellow);
 }
 
 .no-cursor {
   cursor: not-allowed;
 }
+
+
 
 
 /*
@@ -125,15 +134,16 @@ nav {
 .account__viewer, .account__viewer--logged {
   font-size: 16px;
   font-weight: 400;
-  color: #ffc043;
+  color: var(--uber-yellow);
 }
+
 
 /* Hamburger Menu */
 .btn__menu {
   background-color: transparent;
   font-size: 32px;
   border: none;
-  color: #000;
+  color: var(--uber-black);
   display: block;
   transition: all 300ms ease;
   display: flex;
@@ -141,7 +151,7 @@ nav {
 
 .menu__backdrop {
   position: absolute;
-  background-color: #eeeeee;
+  background-color: var(--uber-grey);
   top: 0;
   left: 0;
   right: 0;
@@ -188,12 +198,12 @@ nav {
 .menu__link {
   font-size: 16px;
   font-weight: 500;
-  color: #000;
+  color: var(--uber-black);
   transition: all 300ms ease;
 }
 
 .menu__link:hover {
-  color: #ffc043;
+  color: var(--uber-yellow);
 }
 
 .menu__btn--sign {
@@ -204,7 +214,7 @@ nav {
 }
 
 .menu__btn--sign:hover {
-  color: #ffc043;
+  color: var(--uber-yellow);
 }
 
 .btn__menu--close {
@@ -213,7 +223,7 @@ nav {
   left: 50px;
   margin-bottom: 24px;
   padding: 8px;
-  color: #000;
+  color: var(--uber-black);
   transition: all 300ms ease;
 }
 
@@ -222,13 +232,13 @@ nav {
 .logo {
   font-size: 32px;
   font-weight: 800;
-  color: #000;
+  color: var(--uber-black);
   margin: 0 16px;
 }
 
 .address__search--wrapper {
   border-radius: 50px;
-  background-color: #eeeeee;
+  background-color: var(--uber-grey);
   padding: 4px 16px;
   min-width: 25%;
   display: flex;
@@ -237,7 +247,7 @@ nav {
 }
 .item__search--wrapper {
   border-radius: 0;
-  background-color: #eeeeee;
+  background-color: var(--uber-grey);
   padding: 4px 16px;
   min-width: 25%;
   display: flex;
@@ -246,32 +256,34 @@ nav {
 }
 
 .address__search, .item__search {
-  background-color: #eeeeee;
-  color: #000;
+  background-color: var(--uber-grey);
+  color: var(--uber-black);
   height: 40px;
   outline: none;
   margin-left: 16px;
 }
 
 #search-btn {
-  color: #000;
+  font-size: 16px;
+  color: var(--uber-black);
 }
 
 .item__cart--btn {
   border-radius: 50px;
   padding: 4px 16px;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--uber-black);
+  color: var(--uber-white);
   height: 40px;
 }
 
 .fa-shopping-cart,
 .item__cart--name,
 .item__cart--count {
-  color: #fff;
+  color: var(--uber-white);
 }
 
-/* Filter Navigation Bar */
+
+/* Food Icons Navigation Bar */
 .category__list {
   margin: 32px 0;
   width: 100%;
@@ -295,6 +307,8 @@ nav {
   font-weight: 400;
   margin-top: 16px;
 }
+
+
 
 
 /*
@@ -342,7 +356,7 @@ SLIDER SECTION
   left: 0;
   font-size: 24px;
   font-weight: 600;
-  color: #fff;
+  color: var(--uber-white);
   text-shadow: 2px 2px #000;
   padding: 16px;
 }
@@ -358,14 +372,14 @@ SLIDER SECTION
 
 .slider__option--anchor {
   font-weight: 300;
-  color: #000;
+  color: var(--uber-black);
 }
 
 .slider__arrow {
   font-weight: 700;
   border-radius: 50px;
   background-color: #eeeeee;
-  color: #000;
+  color: var(--uber-black);
   width: 5%;
   margin: 0 16px;
   padding: 8px 9px;
@@ -374,9 +388,11 @@ SLIDER SECTION
 }
 
 
+
+
 /*
 
-LISTINGS
+LISTINGS SECTION
 
 */
 .listings {
@@ -394,7 +410,7 @@ LISTINGS
 .listings {
   font-size: 0.9rem;
   font-weight: 400;
-  color: #000 ;
+  color: var(--uber-black);
   margin: auto 0 auto auto;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -431,7 +447,7 @@ LISTINGS
 }
 
 .header__view--options:hover {
-  color: #ffc043;
+  color: var(--uber-yellow);
 }
 
 .listings .listings__grid {
@@ -472,12 +488,12 @@ LISTINGS
   padding: 0.6rem 0;
 }
 .listings .listings__grid .listings__grid--element .text__lower span {
-  color: var(--color-greyDarker);
+  color: var(--uber-black);
 }
 .listings .listings__grid .listings__grid--element .text {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #000;
   padding: 1rem 0;
 }
 .listings .listings__grid .listings__grid--element .text h3 {
@@ -496,9 +512,9 @@ LISTINGS
 .listings .listings__grid .listings__grid--element .text .rating span {
   height: 40px;
   width: 40px;
-  background: var(--color-grey);
+  background: var(--uber-grey);
   font-size: 1rem;
-  color: black;
+  color: var(--uber-black);
 }
 
 

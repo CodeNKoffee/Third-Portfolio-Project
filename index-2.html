@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find Meal For Your Ingredients</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
   <link rel = "stylesheet" href = "style-2.css">
+  
+  <script defer src="script.js"></script>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
-  <script defer src = "script-2.js"></script>
+  <title>Uber Cuisine | All you can eat</title>
 </head>
-<body>
 
+<body>
+  <!-- Main Navigation Bar -->
   <nav>
     <div class="btn__menu">
       <button class="btn__menu" onclick="openMenu()">
@@ -97,6 +99,7 @@
     </button>
   </nav>
 
+  <!-- Food Icons Navigation Bar -->
   <div class="container">
     <ul class="category__list">
       <li class="category__item">
@@ -142,8 +145,10 @@
     </ul>
   </div>
 
+  <!-- Separator -->
   <hr class="separators">
   
+  <!-- Results Section -->
   <div class = "container">
     <div class = "meal-wrapper">
       <div class = "meal-search">
@@ -151,7 +156,6 @@
         <blockquote>“Get the food you want, from the Tampa cuisine you love, at Uber speed.”<br>
           <cite>- Uber CEO Dara Khosrowshahi</cite>
         </blockquote>
-
         <!-- <div class = "meal-search-box">
           <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
           <button type = "submit" class = "search-btn btn" id = "search-btn">
@@ -159,7 +163,6 @@
           </button>
         </div> -->
       </div>
-
       <div class = "meal-result">
         <h2 class = "title">Your Search Results:</h2>
         <div id= "meal">
@@ -176,14 +179,11 @@
           <!-- end of meal item -->
         </div>
       </div>
-
-
       <div class = "meal-details">
         <!-- recipe close btn -->
         <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
           <i class = "fas fa-times"></i>
         </button>
-
         <!-- meal content -->
         <div class = "meal-details-content">
           <!-- <h2 class = "recipe-title">Meals Name Here</h2>
