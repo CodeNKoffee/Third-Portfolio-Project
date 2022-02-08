@@ -99,17 +99,13 @@ body {
   -o-transition: all 300ms ease;
 }
 
-.recipe-btn:hover {
+.recipe-btn:hover, .buy-btn:hover {
   background-color: var(--uber-grey);
   color: var(--uber-black);
 }
 
 .buy-btn {
   background-color: var(--uber-yellow);
-}
-
-.buy-btn:hover{
-  background: var(--uber-black);
 }
 
 /* meal details */
