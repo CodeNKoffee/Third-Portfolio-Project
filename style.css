@@ -7,7 +7,8 @@
   --uber-white: #fff;
   --uber-yellow: #ffc043;
   --uber-grey: #eeeeee;
-  --uber-black: #000;
+  --uber-jungle-green: #3fc060;
+  --uber-black: #162328;
 }
 
 * {
@@ -289,6 +290,10 @@ nav {
   color: var(--uber-black);
 }
 
+.fa-map-marker {
+  color: var(--uber-black);
+}
+
 .item__cart--btn {
   border-radius: 50px;
   padding: 4px 16px;
@@ -388,7 +393,7 @@ SLIDER SECTION
   font-size: 24px;
   font-weight: 600;
   color: var(--uber-white);
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 2px #162328;
   padding: 16px;
 }
 
@@ -524,7 +529,7 @@ LISTINGS SECTION
 .listings .listings__grid .listings__grid--element .text {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #162328;
   padding: 1rem 0;
 }
 .listings .listings__grid .listings__grid--element .text h3 {

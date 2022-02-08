@@ -33,12 +33,12 @@ signInBtn.addEventListener("click", () => {
   signInBtnTwo.style.display = "none";
 })
 
-signOutBtn.addEventListener("click", () => {
-  signedInStatus.style.display = "none";
-  signedOutStatus.style.display = "block";
-  signOutBtnTwo.style.display = "none";
-  signInBtnTwo.style.display = "block";
-})
+// signOutBtn.addEventListener("click", () => {
+//   signedInStatus.style.display = "none";
+//   signedOutStatus.style.display = "block";
+//   signOutBtnTwo.style.display = "none";
+//   signInBtnTwo.style.display = "block";
+// })
 
 signInBtnTwo.addEventListener("click", () => {
   signedInStatus.style.display = "block";
@@ -99,6 +99,7 @@ function getMealList(){
             <div class = "meal-name">
               <h3>${meal.strMeal}</h3>
               <a href = "#" class = "recipe-btn">Show Recipe</a>
+              <a href = "#" class = "buy-btn">Add to Cart</a>
             </div>
           </div>
         `;
