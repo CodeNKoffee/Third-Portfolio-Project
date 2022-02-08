@@ -97,18 +97,21 @@ nav {
 
 
 /* Account Logged In-Out Status */
-.account__container, .account__container--logged, #sign-in__status, #sign-out__status {
+.account__container, .account__container--logged {
   margin-left: 8px;
   padding: 4px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .account__img--wrapper, .account__img--wrapper-logged {
+  margin: 0 auto;
   width: 60px;
   height: 60px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -120,10 +123,11 @@ nav {
 }
 
 .account__preview, .account__preview--logged {
-  margin-left: 8px;
   padding: 8px 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .account__name, .account__name--logged {
@@ -149,6 +153,14 @@ nav {
   display: flex;
 }
 
+.fa-bars {
+  transition: all 300ms ease;
+}
+
+.fa-bars:hover {
+  color: var(--uber-yellow);
+}
+
 .menu__backdrop {
   position: absolute;
   background-color: var(--uber-grey);
@@ -157,7 +169,7 @@ nav {
   right: 0;
   bottom: 0;
   z-index: 100;
-  width: 20%;
+  width: 18%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -178,10 +190,11 @@ nav {
 .menu--open .menu__backdrop {
   visibility: visible;
   opacity: 1;
-  transform: translate(-10%);
+  transform: translate(0);
 }
 
 .menu__links {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -189,6 +202,10 @@ nav {
 
 .menu__list {
   padding: 8px 0;
+}
+
+.menu__list--two {
+  padding: 0;
 }
 
 .menu__link--icon {
@@ -209,7 +226,7 @@ nav {
 .menu__btn--sign {
   font-size: 24px;
   font-weight: 700;
-  margin-top: 8px;
+  margin-top: 16px;
   transition: all 300ms ease;
 }
 
@@ -220,11 +237,15 @@ nav {
 .btn__menu--close {
   position: absolute;
   top: 10px;
-  left: 50px;
+  left: 10px;
   margin-bottom: 24px;
   padding: 8px;
   color: var(--uber-black);
   transition: all 300ms ease;
+}
+
+.btn__menu--close:hover {
+  color: var(--uber-yellow);
 }
 
 
@@ -294,9 +315,19 @@ nav {
 
 .category__item {
   width: 10%;
+  cursor: not-allowed;
+  transition: all 300ms ease;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.category__item:hover {
+  transform: scale(1.15);
+}
+
+.category__item:active {
+  transform: scale(0.9);
 }
 
 .category__img {
