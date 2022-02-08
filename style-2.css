@@ -140,7 +140,7 @@ body {
 
 
 /* JavaScript-Related Classes */
-.showRecipe{
+.show__recipe{
   display: block;
 }
 
@@ -237,7 +237,7 @@ body {
   opacity: 0.8;
 }
 
-.notFound{
+.not__found{
   grid-template-columns: 1fr!important;
   color: var(--uber-yellow);
   font-size: 1.8rem;
