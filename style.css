@@ -253,7 +253,7 @@ nav {
 /* Other Nav Elements */
 .logo {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 500;
   color: var(--uber-black);
   margin: 0 16px;
 }

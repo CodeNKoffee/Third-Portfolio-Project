@@ -99,7 +99,7 @@ function getMealList(){
             <div class = "meal-name">
               <h3>${meal.strMeal}</h3>
               <a href = "#" class = "recipe-btn">Show Recipe</a>
-              <a href = "#" class = "buy-btn">Add to Cart</a>
+              <a href = "#" id = "buy-btn" class = "buy-btn">Add to Cart</a>
             </div>
           </div>
         `;
@@ -148,3 +148,5 @@ function mealRecipeModal(meal){
   mealDetailsContent.innerHTML = html;
   mealDetailsContent.parentElement.classList.add("show__recipe");
 }
+
+
