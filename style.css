@@ -222,6 +222,7 @@ nav {
 .logo {
   font-size: 32px;
   font-weight: 800;
+  color: #000;
   margin: 0 16px;
 }
 
@@ -250,6 +251,10 @@ nav {
   height: 40px;
   outline: none;
   margin-left: 16px;
+}
+
+#search-btn {
+  color: #000;
 }
 
 .item__cart--btn {
