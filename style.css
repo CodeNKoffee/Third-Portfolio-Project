@@ -7,7 +7,7 @@
   --uber-white: #fff;
   --uber-yellow: #ffc043;
   --uber-grey: #eeeeee;
-  --uber-jungle-green: #3fc060;
+  --uber-green: #3fc060;
   --uber-black: #162328;
 }
 
@@ -287,7 +287,16 @@ nav {
 
 #search-btn {
   font-size: 16px;
-  color: var(--uber-black);
+  animation: colors 1s alternate infinite;
+}
+
+@keyframes colors {
+  from {
+    color: var(--uber-black);
+  }
+  to {
+    color: var(--uber-yellow);
+  }
 }
 
 .fa-map-marker {

@@ -2,6 +2,20 @@ body {
   line-height: 1.6;
 }
 
+#search-btn {
+  font-size: 16px;
+  animation: colors 0.4s alternate infinite;
+}
+
+@keyframes colors {
+  from {
+    color: var(--uber-black);
+  }
+  to {
+    color: var(--uber-yellow);
+  }
+}
+
 .meal-wrapper{
   max-width: 100%;
   margin: 0 auto;
@@ -106,6 +120,27 @@ body {
 
 .buy-btn {
   background-color: var(--uber-yellow);
+  display: inline-block;
+  animation: toAction 2.5s infinite ease-in-out;
+  animation-delay: 5s;
+}
+
+@keyframes toAction {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(-2deg);
+  }
+  10% {
+    transform: rotate(4deg);
+  }
+  15% {
+    transform: rotate(-4deg);
+  }
+  20%, 100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* meal details */

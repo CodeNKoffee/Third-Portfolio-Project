@@ -149,4 +149,17 @@ function mealRecipeModal(meal) {
   mealDetailsContent.parentElement.classList.add("show__recipe");
 }
 
+//Shopping Cart
+document.onafterscriptexecute = funcRef;
+
+function funcRef() {
+  let count = 0;
+  const addToCart = document.getElementById("buy-btn");
+  
+  addToCart.addEventListener("click", () => {
+    count += 1;
+  })
+  console.log(count);
+}
+
 
