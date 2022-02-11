@@ -311,6 +311,10 @@ body {
   align-items: center;
 }
 
+.modal__items--list--content {
+  margin-top: 64px;
+}
+
 .modal__items--list--title, .modal__items--cost {
   font-size: 24px;
   font-weight: 700;
@@ -320,6 +324,19 @@ body {
 
 .modal__items--list--title {
   font-size: 32px;
+}
+
+.modal__items--list--sub-titles {
+  border-bottom: 2px solid #162328;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal__items--list--subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--uber-black);
 }
 
 .modal__items--list--img--wrapper {
