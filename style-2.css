@@ -285,14 +285,49 @@ body {
   top: 50%;
   background-color: var(--uber-grey);
   border-radius: 8px;
-  border-top: 2px solid #ffc043;
+  border-top: 4px solid #ffc043;
   padding: 24px;
-  width: 50%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__items--list {
+  margin-bottom: 32px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__items--list--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal__items--list--title, .modal__items--cost {
   font-size: 24px;
   font-weight: 700;
+  text-align: center;
+}
+
+.modal__items--list--title {
+  margin-bottom: 24px;
+}
+
+.modal__items--list--img--wrapper {
+  width: 30%;
+}
+
+.modal__items--list--img {
+  width: 100%;
+}
+
+.modal__items--list--sub-title {
+  color: var(--uber-yellow);
 }
 
 
