@@ -489,6 +489,15 @@ LISTINGS SECTION
   color: var(--uber-yellow);
 }
 
+.header__view--options--link {
+  color: var(--uber-yellow);
+  transition: all 300ms ease;
+}
+
+.header__view--options--link:hover {
+  color: var(--uber-black);
+}
+
 .listings .listings__grid {
   display: flex;
   overflow: hidden;
