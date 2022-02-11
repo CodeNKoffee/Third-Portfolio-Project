@@ -280,6 +280,21 @@ body {
   display: none;
 }
 
+.modal {
+  position: absolute;
+  top: 50%;
+  background-color: var(--uber-grey);
+  border-radius: 8px;
+  border-top: 2px solid #ffc043;
+  padding: 24px;
+  width: 50%;
+}
+
+.modal__items--list--title, .modal__items--cost {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 
 
 
