@@ -2,6 +2,20 @@ body {
   line-height: 1.6;
 }
 
+#search-btn {
+  font-size: 16px;
+  animation: colors 0.4s alternate infinite;
+}
+
+@keyframes colors {
+  from {
+    color: var(--uber-black);
+  }
+  to {
+    color: var(--uber-yellow);
+  }
+}
+
 .meal-wrapper{
   max-width: 100%;
   margin: 0 auto;
@@ -59,7 +73,7 @@ body {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem; */
   overflow: hidden;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  box-shadow: 0 4px 21px -12px #162328;
   margin: 2rem 0;
 }
 
@@ -80,7 +94,7 @@ body {
 .recipe-btn, .buy-btn{
   text-decoration: none;
   color: #fff;
-  background: var(--uber-yellow);
+  background: var(--uber-black);
   font-weight: 500;
   font-size: 1.1rem;
   padding: 0.75rem 0;
@@ -99,12 +113,34 @@ body {
   -o-transition: all 300ms ease;
 }
 
-.buy-btn {
-  background-color: var(--uber-jungle-green);
+.recipe-btn:hover, .buy-btn:hover {
+  background-color: var(--uber-grey);
+  color: var(--uber-black);
 }
 
-.recipe-btn:hover, .buy-btn:hover{
-  background: var(--uber-black);
+.buy-btn {
+  background-color: var(--uber-yellow);
+  display: inline-block;
+  animation: toAction 2.5s infinite ease-in-out;
+  animation-delay: 5s;
+}
+
+@keyframes toAction {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(-2deg);
+  }
+  10% {
+    transform: rotate(4deg);
+  }
+  15% {
+    transform: rotate(-4deg);
+  }
+  20%, 100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* meal details */
@@ -118,12 +154,12 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   color: #fff;
-  background: var(--uber-yellow);
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  background: var(--uber-grey);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
   width: 90%;
   height: 90%;
   overflow-y: scroll;
@@ -136,7 +172,7 @@ body {
 }
 
 .meal-details::-webkit-scrollbar-thumb{
-  background: #f0f0f0;
+  background: var(--uber-black);
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
@@ -150,20 +186,20 @@ body {
   display: block;
 }
 
-.meal-details-content{
+.meal-details-content {
   margin: 2rem;
 }
 
-.meal-details-content p:not(.recipe-category){
+.meal-details-content p:not(.recipe-category) {
+  color: var(--uber-black);
   padding: 1rem 0;
 }
 
-.recipe-close-btn{
+.recipe-close-btn {
   position: absolute;
   right: 2rem;
   top: 2rem;
   font-size: 1.8rem;
-  background: #fff;
   border: none;
   width: 35px;
   height: 35px;
@@ -178,15 +214,16 @@ body {
   opacity: 0.9;
 }
 
-.recipe-title{
+.recipe-title {
+  color: var(--uber-black);
   letter-spacing: 1px;
   padding-bottom: 1rem;
 }
 
 .recipe-category{
-  background: #fff;
+  background-color: var(--uber-black);
   font-weight: 600;
-  color: var(--uber-yellow);
+  color: var(--uber-white);
   display: inline-block;
   padding: 0.2rem 0.5rem;
   border-radius: 0.3rem;
@@ -196,24 +233,12 @@ body {
   -o-border-radius: 0.3rem;
 }
 
-.recipe-category{
-  background: #fff;
-  font-weight: 600;
-  color: var(--uber-yellow);
-  display: inline-block;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-}
-
-.recipe-instruct{
+.recipe-instruct {
+  color: var(--uber-black);
   padding: 1rem 0;
 }
 
-.recipe-meal-img img{
+.recipe-meal-img img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -225,25 +250,25 @@ body {
   display: block;
 }
 
-.recipe-link{
+.recipe-link {
   margin: 1.4rem 0;
 }
 
-.recipe-link a{
-  color: #fff;
+.recipe-link a {
+  color: var(--uber-black);
   font-size: 1.2rem;
   font-weight: 700;
-  transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -ms-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
 }
-.recipe-link a:hover{
-  opacity: 0.8;
+.recipe-link a:hover {
+  color: var(--uber-yellow);
 }
 
-.not__found{
+.not__found {
   grid-template-columns: 1fr!important;
   color: var(--uber-yellow);
   font-size: 1.8rem;
@@ -257,9 +282,7 @@ body {
 
 
 /*
-
 RESPONSIVENESS
-
 */
 @media screen and (min-width: 600px){
   .meal-search-box{

@@ -83,7 +83,7 @@ recipeCloseBtn.addEventListener("click", () => {
 
 //FUNCTIONS
 //Get Meal List that Matches with the Ingredients
-function getMealList(){
+function getMealList() {
   let searchInputTxt = document.getElementById("search-input").value.trim();
   fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
   .then(response => response.json())
@@ -99,7 +99,7 @@ function getMealList(){
             <div class = "meal-name">
               <h3>${meal.strMeal}</h3>
               <a href = "#" class = "recipe-btn">Show Recipe</a>
-              <a href = "#" class = "buy-btn">Add to Cart</a>
+              <a href = "#" id = "buy-btn" class = "buy-btn">Add to Cart</a>
             </div>
           </div>
         `;
@@ -116,7 +116,7 @@ function getMealList(){
 
 
 //Get Recipe of the Meal
-function getMealRecipe(e){
+function getMealRecipe(e) {
   e.preventDefault();
   if(e.target.classList.contains("recipe-btn")){
     let mealItem = e.target.parentElement.parentElement;
@@ -128,7 +128,7 @@ function getMealRecipe(e){
 
 
 //Create a Modal
-function mealRecipeModal(meal){
+function mealRecipeModal(meal) {
   console.log(meal);
   meal = meal[0];
   let html = `
@@ -147,4 +147,17 @@ function mealRecipeModal(meal){
   `;
   mealDetailsContent.innerHTML = html;
   mealDetailsContent.parentElement.classList.add("show__recipe");
+}
+
+//Shopping Cart
+document.onafterscriptexecute = funcRef;
+
+function funcRef() {
+  let count = 0;
+  const addToCart = document.getElementById("buy-btn");
+  
+  addToCart.addEventListener("click", () => {
+    count += 1;
+  })
+  console.log(count);
 }

@@ -7,7 +7,7 @@
   --uber-white: #fff;
   --uber-yellow: #ffc043;
   --uber-grey: #eeeeee;
-  --uber-jungle-green: #3fc060;
+  --uber-green: #3fc060;
   --uber-black: #162328;
 }
 
@@ -83,9 +83,7 @@ input, button {
 
 
 /*
-
 NAVIGATION BAR
-
 */
 /* Primary Navigation & Utilities */
 nav {
@@ -253,7 +251,7 @@ nav {
 /* Other Nav Elements */
 .logo {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 500;
   color: var(--uber-black);
   margin: 0 16px;
 }
@@ -287,7 +285,16 @@ nav {
 
 #search-btn {
   font-size: 16px;
-  color: var(--uber-black);
+  animation: colors 1s alternate infinite;
+}
+
+@keyframes colors {
+  from {
+    color: var(--uber-black);
+  }
+  to {
+    color: var(--uber-yellow);
+  }
 }
 
 .fa-map-marker {
@@ -348,9 +355,7 @@ nav {
 
 
 /*
-
 SLIDER SECTION
-
 */
 .slider__section--wrapper {
   margin: 32px auto;
@@ -427,9 +432,7 @@ SLIDER SECTION
 
 
 /*
-
 LISTINGS SECTION
-
 */
 .listings {
   padding: 2rem 0;
@@ -552,23 +555,3 @@ LISTINGS SECTION
   font-size: 1rem;
   color: var(--uber-black);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
