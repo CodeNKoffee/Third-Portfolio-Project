@@ -11,6 +11,7 @@ const signOutBtnTwo = document.getElementById("sign-out-two");
 
 
 
+
 //FUNCTIONS
 //Navigation Bar & Hamburger
 function openMenu(){
@@ -67,6 +68,8 @@ const searchBtn = document.getElementById("search-btn");
 const mealList = document.getElementById("meal");
 const mealDetailsContent = document.querySelector(".meal-details-content");
 const recipeCloseBtn = document.getElementById("recipe-close-btn");
+const cartModal = document.getElementById("cart-modal");
+const cartButton = document.getElementById("item__cart--btn");
 
 
 
@@ -77,6 +80,7 @@ mealList.addEventListener("click", getMealRecipe);
 recipeCloseBtn.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("show__recipe");
 });
+cartButton.addEventListener("click", toggleModal);
 
 
 
@@ -167,6 +171,24 @@ document.getElementById("meal").innerHTML = '<button id="buy-btn" class="submit-
 
 //Click on #submit-button(#buy-btn) will now work
 document.getElementById("buy-btn").click();
+
+
+
+
+//Shopping Cart Modal
+cartModal.style.display = "none"
+
+function toggleModal() {
+  if(cartModal.style.display === "none") {
+    cartModal.style.display = "block";
+  } else {
+    cartModal.style.display = "none";
+  }
+}
+
+
+
+
 
 
 

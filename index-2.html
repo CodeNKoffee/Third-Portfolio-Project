@@ -98,7 +98,7 @@
       <span id="item__cart--count" class="item__cart--count">0</span>
     </button>
   </nav>
-  <div class="modal">
+  <div id="cart-modal" class="modal">
     <div class="modal__items--list">
       <div class="modal__items--list--title">Your Cart :</div>
       <div class="modal__items--list--content">
@@ -109,7 +109,12 @@
       </div>
     </div>
     <hr>
-    <div class="modal__items--cost">Your Total Cost : <span class="modal__items--cost--number">0</span></div>
+    <div class="modal__logistics">
+      <div class="modal__items--cost">Your Total Cost : <span class="modal__items--cost--number">0</span></div>
+      <button class="modal__to--checkout">
+        <a class="modal__to--checkout--anchor" href="index-3.html">Proceed to checkout</a>
+      </button>
+    </div>
   </div>
 
   <!-- Food Icons Navigation Bar -->

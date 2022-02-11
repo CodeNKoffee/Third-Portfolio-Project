@@ -291,6 +291,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 300ms ease;
 }
 
 .modal__items--list {
@@ -302,20 +303,23 @@ body {
   align-items: center;
 }
 
-.modal__items--list--content {
+.modal__items--list--content, .modal__logistics {
+  margin: 16px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .modal__items--list--title, .modal__items--cost {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 24px;
   text-align: center;
 }
 
 .modal__items--list--title {
-  margin-bottom: 24px;
+  font-size: 32px;
 }
 
 .modal__items--list--img--wrapper {
@@ -328,6 +332,22 @@ body {
 
 .modal__items--list--sub-title {
   color: var(--uber-yellow);
+}
+
+.modal__to--checkout {
+  background-color: var(--uber-black);
+  border-radius: 8px;
+  padding: 16px 8px;
+  width: 50%;
+  transition: all 300ms ease;
+}
+
+.modal__to--checkout:hover {
+  background-color: var(--uber-yellow);
+}
+
+.modal__to--checkout--anchor {
+  color: var(--uber-white);
 }
 
 
