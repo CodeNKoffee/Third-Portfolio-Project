@@ -150,14 +150,28 @@ function mealRecipeModal(meal) {
 }
 
 //Shopping Cart
-document.onafterscriptexecute = funcRef;
+let counter = -1;
+const count = document.getElementById("item__cart--count");
 
-function funcRef() {
-  let count = 0;
-  const addToCart = document.getElementById("buy-btn");
-  
-  addToCart.addEventListener("click", () => {
-    count += 1;
-  })
-  console.log(count);
-}
+//Event is added for the parent of #buy-btn & output counter in the DOM
+const addToCart = document.getElementById("meal").addEventListener("click", function(e) {
+  if(e.target.id == "buy-btn") {
+    console.log("I F- DID IT!");
+    counter += 1;
+    count.innerHTML = counter;
+  }
+});
+
+//#submit-button(#buy-btn) is dynamically created
+document.getElementById("meal").innerHTML = '<button id="buy-btn" class="submit-btn">Submit</button>';
+
+//Click on #submit-button(#buy-btn) will now work
+document.getElementById("buy-btn").click();
+
+
+
+
+
+
+
+

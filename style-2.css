@@ -276,6 +276,10 @@ body {
   width: 100%;
 }
 
+.submit-btn {
+  display: none;
+}
+
 
 
 
