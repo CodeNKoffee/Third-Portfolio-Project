@@ -156,11 +156,11 @@ function mealRecipeModal(meal) {
 //Shopping Cart
 let counter = -1;
 const count = document.getElementById("item__cart--count");
+const modalContent = document.querySelector(".modal__items--list--content")
 
 //Event is added for the parent of #buy-btn & output counter in the DOM
 const addToCart = document.getElementById("meal").addEventListener("click", function(e) {
   if(e.target.id == "buy-btn") {
-    console.log("I F- DID IT!");
     counter += 1;
     count.innerHTML = counter;
   }
@@ -189,6 +189,10 @@ function toggleModal() {
 
 
 
+//Placing Order
+const modalItems = document.querySelector(".modal__items--list");
+const modalLogistics = document.querySelector(".modal__logistics");
+const purchaseButton = document.querySelector(".modal__to--checkout--btn");
 
 
 

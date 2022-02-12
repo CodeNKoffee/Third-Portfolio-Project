@@ -277,13 +277,18 @@ body {
   width: 100%;
 }
 
+
+
+
+/* Checkout Modal */ 
 .submit-btn {
   display: none;
 }
 
 .modal {
   position: absolute;
-  top: 100px;
+  top: 30px;
+  height: 640px;
   background-color: var(--uber-grey);
   border-radius: 8px;
   border-top: 4px solid #ffc043;
@@ -349,24 +354,39 @@ body {
   width: 100%;
 }
 
+.modal__logistics {
+  border-top: 2px solid #162328;
+}
+
 .modal__items--list--sub-title {
   color: var(--uber-yellow);
 }
 
-.modal__to--checkout {
+.modal__to--checkout--btn {
   background-color: var(--uber-black);
   border-radius: 8px;
+  margin-bottom: 24px;
   padding: 16px 8px;
-  width: 50%;
+  width: 25%;
   transition: all 300ms ease;
 }
 
-.modal__to--checkout:hover {
+.modal__to--checkout--btn:hover {
   background-color: var(--uber-yellow);
 }
 
 .modal__to--checkout--anchor {
   color: var(--uber-white);
+}
+
+.modal__logistics--security--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal__logistics--security {
+  width: 30%;
 }
 
 
@@ -375,7 +395,9 @@ body {
 
 
 /*
+
 RESPONSIVENESS
+
 */
 @media screen and (min-width: 600px){
   .meal-search-box{
