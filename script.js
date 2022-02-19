@@ -70,6 +70,7 @@ const mealDetailsContent = document.querySelector(".meal-details-content");
 const recipeCloseBtn = document.getElementById("recipe-close-btn");
 const cartModal = document.getElementById("cart-modal");
 const cartButton = document.getElementById("item__cart--btn");
+const checkoutButton = document.getElementById("order__btn");
 
 
 
@@ -81,6 +82,7 @@ recipeCloseBtn.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("show__recipe");
 });
 cartButton.addEventListener("click", toggleModal);
+checkoutButton.addEventListener("click", closeModal);
 
 
 
@@ -194,6 +196,13 @@ const modalItems = document.querySelector(".modal__items--list");
 const modalLogistics = document.querySelector(".modal__logistics");
 const purchaseButton = document.querySelector(".modal__to--checkout--btn");
 
+
+
+
+//Order Button
+function closeModal() {
+  cartModal.style.display = "none";
+}
 
 
 
