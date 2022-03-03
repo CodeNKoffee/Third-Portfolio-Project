@@ -709,6 +709,17 @@ RESPONSIVENESS
     width: 100%;
   }
 
+  .account__container, .account__container--logged {
+    width: 70%;
+  }
+
+  .account__viewer,
+  .account__viewer--logged,
+  .account__name,
+  .account__name--logged {
+    font-size: 24px;
+  }
+
   .logo {
     margin-right: 64px;
   }
