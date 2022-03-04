@@ -351,8 +351,6 @@ nav {
 }
 
 
-
-
 /*
 SLIDER SECTION
 */
@@ -726,11 +724,14 @@ RESPONSIVENESS
 
   .mobile__nav--icons {
     display: block;
+    display: flex;
+    justify-content: center;
   }
 
   .search__wrapper--mobile {
     background-color: var(--uber-black);
     border-radius: 50%;
+    width: 60%;
   }
 
   .search__icon--mobile {
