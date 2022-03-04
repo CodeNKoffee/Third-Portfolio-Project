@@ -720,6 +720,21 @@ RESPONSIVENESS
     font-size: 24px;
   }
 
+  .search__wrapper--mobile {
+    background-color: var(--uber-black);
+    border-radius: 50%;
+  }
+
+  .search__icon--mobile {
+    font-size: 24px;
+    color: var(--uber-yellow);
+    margin: 24px;
+  }
+
+  #gps__icon {
+    padding: 0 4px;
+  }
+
   .logo {
     margin-right: 64px;
   }
