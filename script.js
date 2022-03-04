@@ -23,12 +23,6 @@ function closeMenu(){
 }
 
 
-//
-// document.getElementById("logo").addEventListener("click", () => {
-//   location.href = "index-2.html";
-// });
-
-
 //Login-Logout Status
 signedInStatus.style.display = "none";
 signOutBtnTwo.style.display = "none";
