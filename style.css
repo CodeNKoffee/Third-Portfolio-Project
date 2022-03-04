@@ -346,6 +346,10 @@ nav {
   margin-top: 16px;
 }
 
+.mobile__nav--icons {
+  display: none;
+}
+
 
 
 
@@ -718,6 +722,10 @@ RESPONSIVENESS
   .account__name,
   .account__name--logged {
     font-size: 24px;
+  }
+
+  .mobile__nav--icons {
+    display: block;
   }
 
   .search__wrapper--mobile {
